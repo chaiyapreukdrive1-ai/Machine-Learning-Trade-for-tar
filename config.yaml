@@ -1,0 +1,19 @@
+symbol: "BTCUSDT"
+interval: "1m"
+# เป้าหมายกลยุทธ์
+tp_pct: 0.003       # 0.3% (ต้องการ 3% ให้ใส่ 0.03)
+sl_pct: 0.01        # 1%
+max_hold_bars: 60   # ถือสูงสุด 60 แท่ง (1 ชม.)
+
+# ดึงย้อนหลัง
+history_days: 30
+
+# ที่เก็บข้อมูล
+data_dir: "./data"
+raw_dir: "./data/raw"
+feat_dir: "./data/features"
+model_dir: "./data/models"
+
+# Realtime streams
+ws:
+  save_every_sec: 60
